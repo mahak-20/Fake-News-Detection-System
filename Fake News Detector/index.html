@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Headline Forensics — Fake News Detector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <p class="eyebrow">Case file · text analysis desk</p>
+      <h1>Headline Forensics</h1>
+    </div>
+    <p class="desk-note">Naive Bayes engine, trained live in your browser on a bundled 80-headline corpus. No text leaves this page.</p>
+  </header>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Submit for analysis</h2>
+      <textarea id="input-text" placeholder="Paste a headline or short news passage here...">Scientists at a university lab report modest gains in battery efficiency after two years of testing, according to a peer-reviewed study published this week.</textarea>
+      <div class="samples" id="samples"></div>
+      <button class="run-btn" id="run-btn">Run analysis</button>
+    </div>
+
+    <div class="panel">
+      <h2>Case report</h2>
+      <div id="report">
+        <div class="empty-report">Awaiting submission. Run an analysis to generate a report.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>About this tool:</strong> This is an educational demo of a Multinomial Naive Bayes text classifier, trained entirely client-side on a small, hand-written corpus of about 80 example headlines. It picks up on surface patterns — sensational wording, hedged attribution, punctuation — not verified facts. It will misjudge real headlines that use urgent language and fake ones written in a measured tone, and it has no knowledge of current events. Treat the verdict as a demonstration of how the algorithm works, not a fact-check.
+  </footer>
+
+</div>
+</body>
+</html>
